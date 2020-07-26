@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -182,8 +182,13 @@ advantages */
 }
 
 .advantages-list {
+  display: flex;
   list-style: none;
   padding-left: 0;
+}
+
+.advantages-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .title-advantages {
@@ -229,8 +234,18 @@ advantages */
 
 .specialization-list {
   list-style: none;
+  display: flex;
+  padding: 0;
 }
 
+.specialization-block .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.specialization-block .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
 /* Команда сотрудников */
 
 .our-team {
@@ -250,6 +265,16 @@ advantages */
   margin-bottom: 102px;
 }
 
+.team .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  background-color: var(--primary-white-color);
+}
+
+.team .item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .teammates-list h3 {
   color: var(--secondary-text-color);
   margin-top: 30px;
@@ -258,16 +283,20 @@ advantages */
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .teammates-list {
   list-style: none;
   padding-bottom: 86px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sociallink-list {
   margin-top: 16px;
   list-style: none;
+  display: flex;
 }
 /* Вид деятельности сотрудников */
 
@@ -278,6 +307,7 @@ advantages */
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* Раздел "Постоянные клиенты" */
@@ -300,6 +330,17 @@ advantages */
 
 .clients-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients-list .item {
+  width: calc((100% - 150px) / 6);
+  margin-right: 30px;
+}
+
+.clients-list .item:nth-child(6n) {
+  margin-right: 0;
 }
 
 /* Футер */
@@ -345,22 +386,38 @@ advantages */
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.filter {
+.filters {
   margin-top: 94px;
   margin-bottom: 94px;
+}
+
+.filter-set .item:not(:last-child) {
+  margin-right: 8px;
 }
 .filter-name {
   margin-top: 0;
 }
 
-.filter.list {
-  margin-bottom: 34px;
+.filter-set.list {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 280px;
+  margin-right: auto;
 }
 
-.filter-list {
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 500;
-  list-style: none;
-  font-family: Roboto, sans-serif;
+}
+
+.work-list > .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.work-list > .item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .picture-name {
@@ -443,7 +500,7 @@ advantages */
   display: inline-block;
   border-radius: 4px;
   border-width: 0;
-  padding: 22px 6px;
+  padding: 6px 22px;
 
   min-width: 73px;
   font-weight: 500;
