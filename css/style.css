@@ -25,6 +25,19 @@ body {
   line-height: 1.14;
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .logo {
   color: var(--title-text-color);
   font-family: 'Raleway', sans-serif;
@@ -33,6 +46,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  display: flex;
 }
 
 .accent {
@@ -48,6 +63,24 @@ body {
 
 /* site-navigation */
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
 .site-nav a {
   color: var(--secondary-text-color);
 
@@ -58,8 +91,17 @@ body {
   list-style: none;
 }
 
-.list {
+.site-nav .link {
+  display: block;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
   list-style: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link:hover,
@@ -71,8 +113,21 @@ body {
   color: var(--accent-color);
 }
 
+.address-list {
+  margin-left: 305px;
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.contacts-list .contacts + .contacts {
+  margin-left: 30px;
+}
+
 .contacts {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+  display: flex;
 
   font-weight: 500;
   font-size: 14px;
@@ -89,6 +144,10 @@ body {
 
 /* Hero */
 
+.hero {
+  text-align: center;
+}
+
 .hero-title {
   color: var(--title-text-color);
   font-weight: 900;
@@ -97,10 +156,22 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* 
 advantages */
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-title {
+  margin-top: 0;
+}
 
 .advantages-list title {
   font-weight: 700;
@@ -112,6 +183,7 @@ advantages */
 
 .advantages-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .title-advantages {
@@ -123,6 +195,8 @@ advantages */
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-top: 30px;
 }
 
 .discription {
@@ -132,10 +206,18 @@ advantages */
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  margin-top: 10px;
+}
+
+.specialization-block {
+  margin-bottom: 86px;
 }
 
 .specialization {
   color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -153,6 +235,8 @@ advantages */
 
 .our-team {
   color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -163,10 +247,12 @@ advantages */
 
 .team {
   background-color: var(--secondary-background-color);
+  margin-bottom: 102px;
 }
 
 .teammates-list h3 {
   color: var(--secondary-text-color);
+  margin-top: 30px;
 
   font-weight: 500;
   font-size: 16px;
@@ -176,9 +262,11 @@ advantages */
 
 .teammates-list {
   list-style: none;
+  padding-bottom: 86px;
 }
 
 .sociallink-list {
+  margin-top: 16px;
   list-style: none;
 }
 /* Вид деятельности сотрудников */
@@ -194,8 +282,14 @@ advantages */
 
 /* Раздел "Постоянные клиенты" */
 
+.clients-block {
+  margin-bottom: 109px;
+}
+
 .clients {
   color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -250,6 +344,17 @@ advantages */
   line-height: 1.14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.filter {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.filter-name {
+  margin-top: 0;
+}
+
+.filter.list {
+  margin-bottom: 34px;
 }
 
 .filter-list {
@@ -308,13 +413,17 @@ advantages */
 }
 
 .button {
+  border-radius: 4px;
+  border-width: 0;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+
   color: var(--title-text-color);
   background-color: var(--accent-color);
-  border: 0px;
 }
 
 .button:hover,
@@ -331,13 +440,19 @@ advantages */
 }
 
 .button-filter {
+  display: inline-block;
+  border-radius: 4px;
+  border-width: 0;
+  padding: 22px 6px;
+
+  min-width: 73px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.06em;
+
   color: var(--secondary-text-color);
   background-color: var(--secondary-background-color);
-  border: 0px;
 }
 
 .button-filter:focus,
