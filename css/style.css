@@ -47,7 +47,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-
   display: flex;
 }
 
@@ -234,6 +233,8 @@ advantages */
 }
 
 .specialization-list {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
   display: flex;
   padding: 0;
@@ -253,6 +254,7 @@ advantages */
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 50px;
+  padding-top: 102px;
 
   font-weight: 700;
   font-size: 36px;
@@ -293,6 +295,7 @@ advantages */
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -553,5 +556,4 @@ advantages */
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
 }
