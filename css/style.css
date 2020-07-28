@@ -32,10 +32,11 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -289,8 +290,10 @@ advantages */
 .teammates-list {
   list-style: none;
   padding-bottom: 86px;
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 0;
 }
 
 .sociallink-list {
@@ -332,6 +335,7 @@ advantages */
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .clients-list .item {
@@ -485,6 +489,7 @@ advantages */
 
 .button:hover,
 .button:focus {
+  cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--accent-color);
 }
@@ -514,6 +519,39 @@ advantages */
 
 .button-filter:focus,
 .button-filter:hover {
+  cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--accent-color);
+}
+
+.footer-area {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.item {
+  padding-left: 0;
+}
+
+.social-links .social-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-links .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
