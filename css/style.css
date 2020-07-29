@@ -602,6 +602,10 @@ advantages */
   margin-right: 10px;
 }
 
+.social-links p {
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
