@@ -258,7 +258,6 @@ advantages */
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 102px;
 
   font-weight: 700;
   font-size: 36px;
@@ -269,7 +268,8 @@ advantages */
 
 .team {
   background-color: var(--secondary-background-color);
-  padding-bottom: 94px;
+  padding-bottom: 86px;
+  padding-top: 102px;
 }
 
 .team .item {
@@ -326,6 +326,7 @@ advantages */
 
 .clients-block {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .clients {
@@ -338,7 +339,6 @@ advantages */
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 102px;
 }
 
 .clients-list {
@@ -575,14 +575,17 @@ advantages */
 }
 
 .footer-contacts {
+  margin-right: 30px;
   width: calc((100%-60px) / 4);
 }
 
 .social-links {
+  margin-right: 30px;
   width: calc((100%-60px) / 4);
 }
 
 .mailing-link {
+  text-align: right;
   width: calc((100%-60px) / 2);
 }
 
