@@ -307,6 +307,7 @@ advantages */
   margin-top: 16px;
   list-style: none;
   display: flex;
+  padding-bottom: 24px;
 }
 /* Вид деятельности сотрудников */
 
@@ -352,6 +353,10 @@ advantages */
 .clients-list .item {
   width: calc((100% - 150px) / 6);
   margin-right: 30px;
+  height: 90px;
+  text-align: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .clients-list .item:nth-child(6n) {
@@ -436,6 +441,8 @@ advantages */
 .work-list .element {
   width: 370px;
   margin: 15px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .work-list .elem {
@@ -576,17 +583,17 @@ advantages */
 
 .footer-contacts {
   margin-right: 30px;
-  width: calc((100%-60px) / 4);
+  width: 231px;
 }
 
 .social-links {
   margin-right: 30px;
-  width: calc((100%-60px) / 4);
+  width: 206px;
 }
 
 .mailing-link {
   text-align: right;
-  width: calc((100%-60px) / 2);
+  width: 570px;
 }
 
 .item {
